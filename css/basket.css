@@ -1,0 +1,49 @@
+/* The Basket Container */
+	
+.basket {
+		float: left;
+		overflow: hidden;
+		/*position: relative;
+		display: inline-block;*/
+	}
+
+/* Dropdown/Basket button */
+.basket .basketbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.basket:hover .basketbtn{
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.basket-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /*width: 100%;
+  overflow: auto;
+  left: 0;*/
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Mega Menu header, if needed */
+.basket-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.basket:hover .basket-content {
+  display: block;
+}

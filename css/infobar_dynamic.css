@@ -1,0 +1,207 @@
+.infobar-container {
+  color: #333;
+  font-size: 1.8rem;
+  line-height: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+  overflow: hidden;
+  background: #efefef;
+}
+
+.infobar-container .wrapper {
+  color: #333;
+  font-size: 1.8rem;
+  line-height: 26px;
+  box-sizing: border-box;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-container .wrapper-sub {
+  color: #333;
+  font-size: 1.3rem;
+  line-height: 26px;
+  box-sizing: border-box;
+  border-radius: 0;
+  height: 74px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  z-index: : 10;
+}
+
+.info-container .form-postcode {
+  color: #333;
+  line-height: 26px;
+  font-size: 1.3rem;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background: #efefef;
+  float: left;
+  width: 416px;
+  height: 100%;
+  padding: 7px 25px;
+}
+
+.info-container .icon {
+  color: #333;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  background: center top no-repeat;
+  line-height: 1;
+  float: left;
+  margin-right: 5px;
+  min-height: 17px;
+  min-width: 24px;
+  display: inline-block;
+  background-position: bottom;
+  margin-top: 20px;
+  margin-left: 0; 
+}
+
+.info-container .text-postcode {
+  line-height: 26px;
+  box-sizing: border-box;
+  float: left;
+  padding: 15px 0 0 0;
+  color: #312332;
+  font-size: 1.1rem;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  width: auto;
+}
+
+.info-container .search-container {
+  color: #333;
+  line-height: 26px;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+}
+
+.info-container .text-container {
+  color: #333;
+  line-height: 26px;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+}
+
+.info-container input[type=text] {
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  margin: 0;
+  border: 3px solid #fff;
+  border-radius: 5px 0 0 5px;
+  font-size: 1.2rem;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 0 0 12px;
+  width: 120px;
+  box-shadow: none;
+  float: left;
+}
+
+
+.info-container button {
+  color: #333;
+  line-height: 26px;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  float: left;
+  overflow: hidden;
+  background-color: #ed0000;
+}
+
+/*.info-container button {
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  user-select: none;
+  border-radius: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  line-height: 1;
+  box-shadow: none;
+  color: #333;
+  height: 30px;
+  width: 34px;
+  border: 0;
+  padding: 7px 15px;
+  background-color: #ed0000;
+  display: inline-block;
+  position: relative;
+  margin-right: 0;
+
+}*/
+
+/*
+.infobar a {
+	overflow: hidden;
+	float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.infobar p {
+	overflow: hidden;
+	float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 2px 4px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+	/* Style the search field */
+/*.infobar input[type=text] {
+	padding: 10px;
+	font-size: 12px;
+	border: 1px solid #ccc; Gray border
+	border-radius: 4px;
+	box-sizing: border-box;  Make sure that padding and width stays in place 
+	overflow: hidden;
+	background: #f1f1f1;
+	font-family: Arial, Helvetica, sans-serif;
+	/*border-left: none;
+}*/
+
+/* Style the submit button */
+/*.infobar button {
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #ccc;  Gray border 
+  border-radius: 4px;
+  box-sizing: border-box;  Make sure that padding and width stays in place 
+  color: white;
+  background: red;
+  font-size: 12px;
+  /*border: 1px solid grey;*/
+  /*border-right: none;  Prevent double borders
+  cursor: pointer;
+}*/
+
+/*.infobar button:hover {
+  background: #ccc;
+}*/
+
+/* Add a background color on hover */
+/*.infobar a:hover {
+  background-color: #ddd;
+}*/

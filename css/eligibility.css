@@ -1,0 +1,184 @@
+.check-eligibility {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	color: #333333;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	/*background: transparent;*/
+	background: rgba(221, 221, 221, 1);
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 900px;
+	display: block;
+	visibility: visible;
+	border: 1px solid #ccc;
+}
+
+.check-eligibility .header-text {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: 500;
+	color: inherit;
+	font-size: 32px !important;
+	line-height: 38px;
+	background: #ffffff;
+	margin: 40px 100px 0 100px;
+	padding: 20px 30px 30px 30px;
+}
+
+.check-eligibility .postcode-section {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	color: #333333;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	background-color: #ffffff;
+	padding: 1px 30px 30px 30px;
+	border-radius: 3px;
+	margin: 0 100px 30px 100px;
+}
+
+.check-eligibility .postcode-box {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	color: #333333;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	margin: 0;
+	border-radius: 3px;
+	padding: 20px;
+	background: rgba(221, 221, 221, 1);
+	height: 200px;
+}
+
+.check-eligibility .column-postcode {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	color: #333333;
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	position: relative;
+	min-height: 1px;
+	float: left;
+	padding: 0 0 30px 0;
+	width: 100%;
+}
+
+.check-eligibility .row-postcode {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	color: #333333;
+	box-sizing: border-box;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	margin: 0;
+}
+
+.check-eligibility .row-image {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	color: #333333;
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	position: relative;
+	min-height: 1px;
+	float: left;
+	width: 8.33333333%;
+	padding: 0;
+}
+
+.check-eligibility .row-text {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	color: #333333;
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	position: relative;
+	min-height: 1px;
+	float: left;
+	width: 91.66666667%;
+	padding: 0;
+}
+
+.check-eligibility .postcode-search-section {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	color: #333333;
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	position: relative;
+	min-height: 1px;
+	float: left;
+	width: 91.66666667%;
+	padding: 0;
+	margin-left: 45px;
+}
+
+
+.check-eligibility .postcode-field {
+	box-sizing: border-box;
+	vertical-align: middle;
+	font: inherit;
+	font-family: inherit;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 20px;
+	color: #555555;
+	background-color: #ffffff;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	transition: border linear .2s, box-shadow linear .2s;
+	border: 1px solid #cacaca;
+	margin: 0;
+	padding: 7px 10px;
+	border-radius: 5px;
+}

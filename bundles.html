@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5CJLZ8P');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <title>Geniuses Website Bundle Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/infobar.css">
+    <link rel="stylesheet" href="css/basket.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/search_bar.css">
+    <link rel="stylesheet" href="css/product_banner.css">
+    <link rel="stylesheet" href="css/product_panel.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index_functions.js"></script>
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CJLZ8P"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script src="js/index_functions.js"></script>
+    <script src="js/cookies_basket_functions.js"></script>
+
+    <button class="button style1" id="myButton" onclick="myFunction()">
+        Click Me!
+    </button>
+
+    <div class="navbar style1">
+        <a id='homeNavBarLink' href="index.html" title="Home Page"><i class="fa fa-home"></i></a>
+        <a id='bundlesNavBarLink' href="bundles.html" title="Most Popular Producs">Bundles</a>
+        <div class="dropdown">
+            <button class="dropbtn">Broadband
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div id='dropdownContentNavBar' class="dropdown-content">
+                <div class="header style1">
+                    <h4>Broadband Deals</h4>
+                </div>
+                <div class="row">
+                    <div id='broadbandButtonsNavBar' class="column">
+                        <a id='bbPhoneNavBarLink' href="bb_phone.html">Broadband and phone</a>
+                        <a id='bbOnlyNavBarLink' href="bb_only.html">Broadband only</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id='helpNavBarLink' href='help_and_support.html'>Help & Support</a>
+        <div class="basket style1">
+            <button id='basketButtonNavBar' class="basketbtn">
+                <i class="fa fa-shopping-basket"></i> Your Basket <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="basket-content style1" id="basket_content">
+                <div class="header">
+                    <h5 id="basket_content_dynamic"></h5>
+                    <button onclick="deleteCookie('basket');location.replace('index.html');" id="remove_basket" style="display: none;">Remove Basket</button>
+                    <br>
+                    <button onclick="location.replace('eligibility.html');" id="proceed_eli" style="display: none;">Proceed Checkout</button>
+                </div>
+            </div>
+        </div>
+        <div class="search-container style1">
+            <input id='searchNavBar' type="text" placeholder="Search.." name="search">
+            <button class='style1' id='submitSearchNavBar' type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+
+    <!-- Update Nav Bar For Basket Element If Any -->
+    <script>
+        updateBasket();
+    </script>
+
+    <div class="infobar style1">
+        <ul href="" style="color:white">
+            <i class="fa fa-home" style="color:white"></i> What Service Is Available For You?
+            <input id='searchInfoBar' type="text" placeholder="Enter postcode" name="search">
+            <button id='searchButtonInfoBar' type="submit" class="style1"><i class="fa fa-search"></i></button>
+            <a href="" id='chatButtonInfoBar' style="color:white"><i class="fa fa-comments" style="color:white"></i> Chat</a>
+            <a href="" id='callButtonInfoBar' style="color:white"><i class="fa fa-phone" style="color:white"></i> Call Us</a>
+        </ul>
+    </div>
+
+
+    <!-- Slide Show Gallery You Can Change The Pictures Accordingly -->
+    <div id="slideshowContainer" class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div id="firstImageNumber" class="numbertext">1 / 3</div>
+      <img id="firstImage" src="images/style1_homepage_picture_1.jpg" style="width:100%">
+      <div id="firstImageCaption" class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div id="secondImageNumber" class="numbertext">2 / 3</div>
+      <img id="secondImage" src="images/style1_homepage_picture_2.jpg" style="width:100%">
+      <div id="secondImageCaption" class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div id="thirdImageNumber" class="numbertext">3 / 3</div>
+      <img id="thirdImage" src="images/style1_homepage_picture_3.jpg" style="width:100%">
+      <div id="thirdImageCaption" class="text">Caption Three</div>
+    </div>
+
+    </div>
+
+
+    <br>
+
+    <div id="productListContainer" class="row_product">
+        <div id="firstProductContainer" class="columnar-card">
+            <a href="bundles.html">
+                <img id="firstProductIcon" src="images/style1_homepage_product_1_icon.jpg" style="width:100%">
+                <p id="firstProductText">Bundles Offers</p>
+            </a>
+        </div>
+        <div id="secondProductContainer" class="columnar-card">
+            <a href="bb_phone.html">
+                <img id="secondProductIcon" src="images/style1_homepage_product_2_icon.jpg" style="width:100%">
+                <p id="secondProductText">Broadband and Phones</p>
+            </a>
+        </div>
+        <div id="thirdProductContainer" class="columnar-card">
+            <a href="bb_only.html">
+                <img id="thirdProductIcon" src="images/style1_homepage_product_3_icon.jpg" style="width:100%">
+                <p id="thirdProductText">Broadband Only</p>
+            </a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="bundlesListContainer", class="row_bundle">
+        <div id="firstBundleContainer" class="columnar-card_ style1">
+            <p id="firstBundleHeader" style="height: 10%;">Big Bundle</p>
+            <div id="icon1FirstBundleDesc" class="icon-desc">
+                <img src="images/big-speed-icon.png" style="height: 14%;">
+                <h5 style="height: 14%;">M50 Fibre Broadband</h5>
+                <ul style="height: 28%;">
+                    <li class="li">Avg download of 54Mbps</li>
+                    <li class="li">Avg upload of 5Mbps</li>
+                    <li class="li">Ideal for small households</li>
+                    <li class="li">Intelligent WiFi</li>
+                </ul>
+                <button id="icon1FirstButtonCloseButton" class="close-icon-button">
+                    <i class="fa fa-times"></i> Close
+                </button>
+            </div>
+            <div id="icon2FirstBundleDesc" class="icon-desc">
+                <img src="images/big-tv-icon.png"  style="height: 14%;"><br>
+                <h5  style="height: 14%;">Maxit TV</h5>
+                <ul  style="height: 28%;">
+                    <li class="li">Over 110 channels</li>
+                    <li class="li">Essential channels</li>
+                    <li class="li">Watch Netflix on TV</li>
+                </ul>
+                <button id="icon2FirstButtonCloseButton" class="close-icon-button">
+                    <i class="fa fa-times"></i> Close
+                </button>
+            </div>
+            <div id="firstBundleMainText" style="background: white; padding: 14px 16px;height: 30%;">
+                <b>&#163;<span>33</span> a month</b><br>
+                for <span>18</span> months<br>
+                then &#163;<span>56</span> a month<br>
+                <s><span>&#163;<span>35</span> setup fee applies*</span></s><br>
+                <span> </span>(<span>18</span> month contract applies)
+            </div>
+            <div id="iconsFirstBundle" class="row_icon" style="background: white;height: 35%;">
+                <div id="icon1FirstBundle" class="columnar-icon">
+                    <img src="images/big-speed-icon.png">
+                    <p id="icon1FirstBundleTest">54 Mbps average</p>
+                </div>
+                <div id="icon2FirstBundle" class="columnar-icon">
+                    <img src="images/big-tv-icon.png">
+                    <p id="icon2FirstBundleTest">100+ Channels</p>
+                </div>
+            </div>
+            <div id="firstBundleFooter" class='bottom'>  
+                <a id="StartOrderButtonFirstBundle" href="eligibility.html" onclick="createBasketCookie()">Start your order</a>
+            </div>
+        </div>
+
+        <div id="secondBundleContainer" class="columnar-card_ style1">
+            <p id="secondBundleHeader" style="height: 10%;">Bigger Bundle</p>
+            <div id="icon1SecondBundleDesc" class="icon-desc">
+                <img src="images/big-speed-icon.png"  style="height: 14%;">
+                <h5  style="height: 14%;">M200 Fibre Broadband</h5>
+                <ul  style="height: 28%;">
+                    <li class="li">Avg download of 213Mbps</li>
+                    <li class="li">Avg upload of 20Mbps</li>
+                    <li class="li">Ulimited Donwloads</li>
+                    <li class="li">Intelligent WiFi</li>
+                </ul>
+                <button id="icon1SecondButtonCloseButton"  class="close-icon-button">
+                    <i class="fa fa-times"></i> Close
+                </button>
+            </div>
+            <div id="icon2SecondBundleDesc" class="icon-desc">
+                <img src="images/big-tv-icon.png"  style="height: 14%;"><br>
+                <h5  style="height: 14%;">Maxit TV</h5>
+                <ul  style="height: 28%;">
+                    <li class="li">Over 190 channels</li>
+                    <li class="li">4K Ultra HD sport channel</li>
+                    <li class="li">Watch Netflix on TV</li>
+                </ul>
+                <button id="icon2SecondButtonCloseButton"  class="close-icon-button">
+                    <i class="fa fa-times"></i> Close
+                </button>
+            </div>
+            <div id="secondBundleMainText" style="background: white; padding: 14px 16px;height: 30%;">
+                <b>&#163;<span>49</span> a month</b><br>
+                for <span>18</span> months<br>
+                then &#163;<span>88</span> a month<br>
+                <s><span>&#163;<span>35</span> setup fee applies*</span></s><br>
+                <span> </span>(<span>18</span> month contract applies)
+            </div>
+            <div id="iconsSecondBundle" class="row_icon" style="background: white;height: 35%;">
+                <div id="icon1SecondBundle" class="columnar-icon">
+                    <img src="images/big-speed-icon.png">
+                    <p id="icon1secondBundleTest">213 Mbps average</p>
+                </div>
+                <div id="icon2SecondBundle" class="columnar-icon">
+                    <img src="images/big-tv-icon.png">
+                    <p id="icon2SecondBundleTest">190+ Channels</p>
+                </div>
+            </div>
+            <div id="secondBundleFooter" class='bottom'>  
+                <a id="StartOrderButtonSecondBundle" href="eligibility.html" onclick="createBasketCookie()">Start your order</a>
+            </div>
+        </div>
+
+        <div id="thirdBundleContainer" class="columnar-card_ style1">
+            <p id="thirdBundleHeader" style="height: 10%;">Bigger Bundle sports</p>
+            <div id="icon1ThirdBundleDesc" class="icon-desc">
+                <img src="images/big-speed-icon.png"  style="height: 14%;">
+                <h5  style="height: 14%;">M200 Fibre Broadband</h5>
+                <ul  style="height: 28%;">
+                    <li class="li">Avg download of 213Mbps</li>
+                    <li class="li">Avg upload of 20Mbps</li>
+                    <li class="li">Unlimited downloads</li>
+                    <li class="li">Intelligent WiFi</li>
+                </ul>
+                <button id="icon1ThirdButtonCloseButton" class="close-icon-button">
+                    <i class="fa fa-times"></i> Close
+                </button>
+            </div>
+            <div id="icon2ThirdBundleDesc" class="icon-desc">
+                <img src="images/big-tv-icon.png"  style="height: 14%;"><br>
+                <h5  style="height: 14%;">Maxit TV</h5>
+                <ul  style="height: 28%;">
+                    <li class="li">Over 195 channels</li>
+                    <li class="li">4K Ultra HD on all sport channel</li>
+                    <li class="li">Watch Netflix on TV</li>
+                </ul>
+                <button id="icon2ThirdButtonCloseButton" class="close-icon-button">
+                    <i class="fa fa-times"></i> Close
+                </button>
+            </div>
+            <div id="thirdBundleMainText" style="background: white; padding: 14px 16px;height: 30%;">
+                <b>&#163;<span>65</span> a month</b><br>
+                for <span>18</span> months<br>
+                then &#163;<span>113</span> a month<br>
+                <s><span>&#163;<span>35</span> setup fee applies*</span></s><br>
+                <span> </span>(<span>18</span> month contract applies)
+            </div>
+            <div id="iconsThirdBundle" class="row_icon" style="background: white;height: 35%;">
+                <div id="icon1ThirdBundle" class="columnar-icon">
+                    <img src="images/big-speed-icon.png">
+                    <p id="icon1ThirdBundleTest">213 Mbps average</p>
+                </div>
+                <div id="icon2ThirdBundle" class="columnar-icon">
+                    <img src="images/big-tv-icon.png">
+                    <p id="icon2ThirdBundleTest">195+ Channels</p>
+                </div>
+            </div>
+            <div id="thirdBundleFooter" class='bottom'>  
+                <a id="StartOrderButtonThirdBundle" href="eligibility.html" onclick="createBasketCookie()">Start your order</a>
+            </div>
+        </div>
+
+        <div id="fourthBundleContainer" class="columnar-card_ style1">
+            <p id="fourthBundleHeader" style="height: 10%;">Ultimate Bundle</p>
+            <div id="icon1FourthBundleDesc" class="icon-desc">
+                <img src="images/big-speed-icon.png"  style="height: 14%;">
+                <h5  style="height: 14%;">M600 Fibre Broadband</h5>
+                <ul  style="height: 28%;">
+                    <li class="li">Avg download of 630Mbps</li>
+                    <li class="li">Avg upload of 41Mbps</li>
+                    <li class="li">Fastest in the UK</li>
+                    <li class="li">Intelligent WiFi</li>
+                </ul>
+                <button id="icon1FourthButtonCloseButton" class="close-icon-button">
+                    <i class="fa fa-times"></i> Close
+                </button>
+            </div>
+            <div id="icon2FourthBundleDesc" class="icon-desc">
+                <img src="images/big-tv-icon.png"  style="height: 14%;"><br>
+                <h5  style="height: 14%;">Maxit TV</h5>
+                <ul  style="height: 28%;">
+                    <li class="li">Over 230 channels</li>
+                    <li class="li">4K Ultra HD on all sport channel</li>
+                    <li class="li">Watch on all your screens</li>
+                </ul>
+                <button id="icon2FourthButtonCloseButton"  class="close-icon-button">
+                    <i class="fa fa-times"></i> Close
+                </button>
+            </div>
+            <div id="fourthBundleMainText" style="background: white; padding: 14px 16px;height: 30%;">
+                <b>&#163;<span>89</span> a month</b><br>
+                for <span>18</span> months<br>
+                then &#163;<span>139</span> a month<br>
+                <s><span>&#163;<span>35</span> setup fee applies*</span></s><br>
+                <span> </span>(<span>18</span> month contract applies)
+            </div>
+            <div id="iconsFourthBundle" class="row_icon" style="background: white;height: 35%;">
+                <div id="icon1FourthBundle" class="columnar-icon">
+                    <img src="images/big-speed-icon.png">
+                    <p id="icon1FourthBundleTest">630 Mbps average</p>
+                </div>
+                <div id="icon2FourthBundle" class="columnar-icon">
+                    <img src="images/big-tv-icon.png">
+                    <p id="icon2FourthBundleTest">230 Channels</p>
+                </div>
+            </div>
+            <div id="FourthBundleFooter" class='bottom'>  
+                <a id="StartOrderButtonFourthBundle" href="eligibility.html" onclick="createBasketCookie()">Start your order</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/icons.js"></script>
+
+</body>
+</html>
