@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <!-- Google Tag Manager 
+    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5CJLZ8P');</script>
-     End Google Tag Manager -->
+    <!-- End Google Tag Manager -->
 
-    <meta charset="UTF-8">
+
+	
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Blue Mobile Website Home Page</title>
 
-		<!--
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
@@ -22,9 +26,12 @@
     <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/search_bar.css">
     <link rel="stylesheet" href="css/product_banner.css">
-
+<!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
--->
+
+	
+    <link rel="shortcut icon" href="https://appservice.azureedge.net/images/app-service/v4/favicon.ico"
+        type="image/x-icon" />
     <script type='text/javascript'
         src='https://c.la1-c1cs-lo2.salesforceliveagent.com/content/g/js/59.0/deployment.js'></script>
 
@@ -64,17 +71,16 @@
 
     </style>
 
-    
 </head>
 
 <body>
 
-    <!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CJLZ8P"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-<!--
+
     <script src="js/index_functions.js"></script>
     <script src="js/cookies_basket_functions.js"></script>
 
@@ -120,8 +126,8 @@
             <button class='style1' id='submitSearchNavBar' type="submit"><i class="fa fa-search"></i></button>
         </div>
     </div>
--->
-    <!-- Update Nav Bar For Basket Element If Any 
+
+	 <!-- Update Nav Bar For Basket Element If Any -->
     <script>
         updateBasket();
     </script>
@@ -182,71 +188,33 @@
                 <p id="thirdProductText">Broadband Only</p>
             </a>
         </div>
-    </div> -->
-        <!-- start -->
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
-	}
-</style>
-<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-<script type='text/javascript'>
-	var initESW = function(gslbBaseURL) {
-		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+    </div> 
+	
+    <!-- start -->
 
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+    <div id="liveagent_button_online_box">
+        <a id="liveagent_button_online_5737E000000CarN" href="javascript://Chat"
+            onclick="liveagent.startChat('5737E000000CarN')" class="embeddedServiceHelpButton helpButton uiButton"
+            style="display: none;">Chat with an Expert</a>
+        <div id="liveagent_button_offline_5737E000000CarN" style="display: none;">Agent Offline</div>
+    </div>
 
-		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
-		// Settings for Chat
-		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-			// Returns a valid button ID.
-		//};
-		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
-		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 
-		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-		embedded_svc.settings.entryFeature = 'LiveAgent';
+    <script type="text/javascript">
+	if (!window._laq) { window._laq = []; }
+	window._laq.push(function(){liveagent.showWhenOnline('5737E000000CarN', document.getElementById('liveagent_button_online_5737E000000CarN'));
+	liveagent.showWhenOffline('5737E000000CarN', document.getElementById('liveagent_button_offline_5737E000000CarN'));
+	});
+    </script>
 
-		embedded_svc.init(
-			'https://efficiency-saas-8576-dev-ed.scratch.my.salesforce.com',
-			'https://efficiency-saas-8576-dev-ed.scratch.my.site.com/',
-			gslbBaseURL,
-			'00D7E000000BE0W',
-			'ChatQueueUsers',
-			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-lo2.salesforceliveagent.com/content',
-				deploymentId: '5727E000000Cat7',
-				buttonId: '5737E000000CarN',
-				baseLiveAgentURL: 'https://d.la1-c1cs-lo2.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'ChatQueueUsers',
-				isOfflineSupportEnabled: true
-			}
-		);
-	};
 
-	if (!window.embedded_svc) {
-		var s = document.createElement('script');
-		s.setAttribute('src', 'https://efficiency-saas-8576-dev-ed.scratch.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-		s.onload = function() {
-			initESW(null);
-		};
-		document.body.appendChild(s);
-	} else {
-		initESW('https://service.force.com');
-	}
-</script>
-	<!-- end -->
+    <script type='text/javascript'>
+        liveagent.init('https://d.la1-c1cs-lo2.salesforceliveagent.com/chat', '5727E000000Cat7', '00D7E000000BE0W');
+    </script>
 
+    <!-- end -->
 
 </body>
+
 </html>
