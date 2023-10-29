@@ -191,8 +191,7 @@
     </div> 
 	
     <!-- start -->
-
-    <div id="liveagent_button_online_box">
+    <div id="liveagent_button_online_box" style="display: none">
         <a id="liveagent_button_online_5737E000000CarN" href="javascript://Chat"
             onclick="liveagent.startChat('5737E000000CarN')" class="embeddedServiceHelpButton helpButton uiButton"
             style="display: none;">Chat with an Expert</a>
@@ -206,6 +205,14 @@
 	window._laq.push(function(){liveagent.showWhenOnline('5737E000000CarN', document.getElementById('liveagent_button_online_5737E000000CarN'));
 	liveagent.showWhenOffline('5737E000000CarN', document.getElementById('liveagent_button_offline_5737E000000CarN'));
 	});
+    </script>
+    <script>
+        addEventListener("keypress", (event) => {
+            if(event.key == 'h'){
+                document.getElementById('liveagent_button_online_box').style.display = '';
+                liveagent.startChat('5737E000000CarN')
+            }
+        });
     </script>
 
 
