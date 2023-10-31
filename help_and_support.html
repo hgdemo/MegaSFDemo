@@ -1,107 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Geniuses Website Home Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/infobar.css">
-    <link rel="stylesheet" href="css/basket.css">
-    <link rel="stylesheet" href="css/dropdown.css">
-    <link rel="stylesheet" href="css/search_bar.css">
-    <link rel="stylesheet" href="css/support_sheet.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blue Mobile Home Page</title>
+    <link rel="stylesheet" href="./font-awesome-6/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/index_functions.js"></script>
     <script src="js/cookies_basket_functions.js"></script>
-</head>
+    <script type='text/javascript'
+        src='https://c.la1-c1cs-lo2.salesforceliveagent.com/content/g/js/59.0/deployment.js'></script>
 
-<body>
+  </head>
+  </head>
 
-<script src="js/index_functions.js"></script>
-<script src="js/cookies_basket_functions.js"></script>
-
-<button class="button style1" id="myButton" onclick="myFunction()">
-    Click Me!
-</button>
-
-<div class="navbar style1">
-    <a id='homeNavBarLink' href="index.html" title="Home Page"><i class="fa fa-home"></i></a>
-    <a id='bundlesNavBarLink' href="bundles.html" title="Most Popular Producs">Bundles</a>
-    <div class="dropdown">
-        <button class="dropbtn">Broadband
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div id='dropdownContentNavBar' class="dropdown-content">
-            <div class="header style1">
-                <h4>Broadband Deals</h4>
+  <body>
+		<div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg navbar-light py-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./bundles.html"
+                  >Bundles</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarScrollingDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Broadband
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarScrollingDropdown"
+                >
+                  <li><a class="dropdown-item" href="./bb_phone.html">Broadband and wireless</a></li>
+                  <li><a class="dropdown-item" href="./bb_only.html">Broadband only</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./help_and_support.html">Help & Support</a>
+              </li>
+              <li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="basket">
+									<i class="fa-regular fa-basket-shopping"></i> Your Basket
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="basket">
+									<li id="li-proceed"><a class="dropdown-item" href="./checkout.html">Proceed</a></li>
+									<li id="li-empty"><a class="dropdown-item" href="#">Empty</a></li>
+								</ul>
+							</li>
+            </ul>
+            <div class="d-flex">
+              <!-- <button type="button" class="btn btn-light me-3">
+                <i class="fa-regular fa-message"></i> Chat
+              </button>
+              <button type="button" class="btn btn-light">
+                <i class="fa-regular fa-phone"></i> Call us
+              </button> -->
+              <!-- <button type="button" class="btn btn-light">
+                <i class="fa-regular fa-search"></i>
+              </button> -->
             </div>
-            <div class="row">
-                <div id='broadbandButtonsNavBar' class="column">
-                    <a id='bbPhoneNavBarLink' href="bb_phone.html">Broadband and phone</a>
-                    <a id='bbOnlyNavBarLink' href="bb_only.html">Broadband only</a>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-    <a id='helpNavBarLink' href='help_and_support.html'>Help & Support</a>
-    <div class="basket style1">
-        <button id='basketButtonNavBar' class="basketbtn">
-            <i class="fa fa-shopping-basket"></i> Your Basket <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="basket-content style1" id="basket_content">
-            <div class="header">
-                <h5 id="basket_content_dynamic"></h5>
-                <button onclick="deleteCookie('basket');location.replace('index.html');" id="remove_basket" style="display: none;">Remove Basket</button>
-                <br>
-                <button onclick="location.replace('eligibility.html');" id="proceed_eli" style="display: none;">Proceed Checkout</button>
-            </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light nav-search">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex align-items-center ms-auto">
+              <label for="searchInfoBar" class="search-label pe-3"
+                >What Service Is Available For You?</label
+              >
+              <input
+                class="form-control me-2 search-field"
+                type="search"
+                placeholder="enter zip code"
+                aria-label="enter zip code"
+                id="searchInfoBar"
+              />
+              <button class="btn btn-dark" type="submit" id="searchButtonInfoBar">Search</button>
+            </form>
+          </div>
         </div>
+      </nav>
+      
+      <div class="help-form-container">
+				<form action="" class="d-flex">
+					<div class="help-form-wrapper">
+						<h1><i class="fa-solid fa-circle-question" style="color: #1E90FF;"></i> Help and Support</h1>
+						<div class="d-flex mt-4">
+							<div class="w-100">
+								<label for="exampleInputEmail1" class="form-label">First Name</label>
+								<input type="text" class="form-control" id="fname" aria-describedby="firstname" placeholder="Your name.." name="firstname">
+							</div>
+							<div class="ms-4 w-100">
+								<label for="exampleInputEmail1" class="form-label">Last Name</label>
+								<input type="text" class="form-control" id="lname" aria-describedby="lastname" placeholder="your last name.." name="lastname">
+							</div>
+						</div>
+						<div class="mt-4">
+							<label for="exampleInputEmail1" class="form-label">State</label>
+							<select class="form-select" aria-label="state" id="state" name="state">
+								<option value="ny">NY</option>
+								<option value="nj">NJ</option>
+								<option value="de">DE</option>
+								<option value="ct">CT</option>
+								<option value="ma">MA</option>
+							</select>
+						</div>
+						<div class="mt-4">
+							<label for="exampleInputEmail1" class="form-label">Subject</label>
+							<textarea class="form-control" id="subject" rows="4" placeholder="Write something.." name="subject"></textarea>
+						</div>
+						<button class="btn btn-success help-form-button" type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+
+      <footer class="footer m-0">
+        <p class="mb-0">
+          © 2023 All Rights Reserved by Blue Mobile.
+        </p>
+      </footer>
     </div>
-    <div class="search-container style1">
-        <input id='searchNavBar' type="text" placeholder="Search.." name="search">
-        <button class='style1' id='submitSearchNavBar' type="submit"><i class="fa fa-search"></i></button>
+
+
+    <script src="js/index_functions.js"></script>
+    <script src="js/cookies_basket_functions.js"></script>
+
+    <!-- Update Nav Bar For Basket Element If Any -->
+    <script>
+      updateBasket();
+    </script>
+            <!-- start -->
+    <div id="liveagent_button_online_box" style="display: none">
+        <a id="liveagent_button_online_5737E000000CarN" href="javascript://Chat"
+            onclick="liveagent.startChat('5737E000000CarN')" class="embeddedServiceHelpButton helpButton uiButton"
+            style="display: none;">Chat with an Expert</a>
+        <div id="liveagent_button_offline_5737E000000CarN" style="display: none;">Agent Offline</div>
     </div>
-</div>
-
-<!-- Update Nav Bar For Basket Element If Any -->
-<script>
-    updateBasket();
-</script>
-
-<div class="infobar style1">
-    <ul href="" style="color:white">
-        <i class="fa fa-home" style="color:white"></i> What Service Is Available For You?
-        <input id='searchInfoBar' type="text" placeholder="Enter postcode" name="search">
-        <button id='searchButtonInfoBar' type="submit" class="style1"><i class="fa fa-search"></i></button>
-        <a href="" id='chatButtonInfoBar' style="color:white"><i class="fa fa-comments" style="color:white"></i> Chat</a>
-        <a href="" id='callButtonInfoBar' style="color:white"><i class="fa fa-phone" style="color:white"></i> Call Us</a>
-    </ul>
-</div>
 
 
-<div class="container">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <script type="text/javascript">
+  if (!window._laq) { window._laq = []; }
+  window._laq.push(function(){liveagent.showWhenOnline('5737E000000CarN', document.getElementById('liveagent_button_online_5737E000000CarN'));
+  liveagent.showWhenOffline('5737E000000CarN', document.getElementById('liveagent_button_offline_5737E000000CarN'));
+  });
+    </script>
+    <script>
+        addEventListener("keypress", (event) => {
+            if(event.key == 'h'){
+                document.getElementById('liveagent_button_online_box').style.display = '';
+                liveagent.startChat('5737E000000CarN')
+            }
+        });
+    </script>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-      <option value="france">France</option>
-      <option value="uk">United Kingdom</option>
-    </select>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <script type='text/javascript'>
+        liveagent.init('https://d.la1-c1cs-lo2.salesforceliveagent.com/chat', '5727E000000Cat7', '00D7E000000BE0W');
+    </script>
 
-    <input type="submit" value="Submit">
-</div>
-
-</body>
+    <!-- end -->
+  </body>
 </html>

@@ -19,3 +19,18 @@
 .navbar a:hover {
   background-color: red;
 }
+
+.navbar h2 {
+
+text-align: center;
+color: white;
+font: "Fira Sans", sans-serif;
+
+}
+
+.navbar h5 {
+
+text-align: center;
+color: white;
+font: 1.2rem  "Fira Sans", Helvetica;
+}

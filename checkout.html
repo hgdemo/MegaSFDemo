@@ -1,184 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5CJLZ8P');</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5CJLZ8P");
+    </script>
     <!-- End Google Tag Manager -->
-    
-    <meta charset="UTF-8">
-    <title>Geniuses Website Checkout Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/infobar.css">
-    <link rel="stylesheet" href="css/basket.css">
-    <link rel="stylesheet" href="css/dropdown.css">
-    <link rel="stylesheet" href="css/search_bar.css">
-    <link rel="stylesheet" href="css/checkout.css">
+
+    <meta charset="UTF-8" />
+    <title>Blue Mobile Checkout Page</title>
+    <link rel="stylesheet" href="./font-awesome-6/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/index_functions.js"></script>
     <script src="js/cookies_basket_functions.js"></script>
-</head>
+    <script type='text/javascript'
+        src='https://c.la1-c1cs-lo2.salesforceliveagent.com/content/g/js/59.0/deployment.js'></script>
 
-<body>
+  </head>
+  </head>
 
+  <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CJLZ8P"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5CJLZ8P"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg navbar-light py-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./bundles.html"
+                  >Bundles</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarScrollingDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Broadband
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarScrollingDropdown"
+                >
+                  <li><a class="dropdown-item" href="./bb_phone.html">Broadband and wireless</a></li>
+                  <li><a class="dropdown-item" href="./bb_only.html">Broadband only</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./help_and_support.html">Help & Support</a>
+              </li>
+              <li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="basket">
+									<i class="fa-regular fa-basket-shopping"></i> Your Basket
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="basket">
+									<li id="li-proceed"><a class="dropdown-item" href="./checkout.html">Proceed</a></li>
+									<li id="li-empty"><a class="dropdown-item" href="#">Empty</a></li>
+								</ul>
+							</li>
+            </ul>
+            <div class="d-flex">
+              <!-- <button type="button" class="btn btn-light me-3">
+                <i class="fa-regular fa-message"></i> Chat
+              </button>
+              <button type="button" class="btn btn-light">
+                <i class="fa-regular fa-phone"></i> Call us
+              </button> -->
+              <!-- <button type="button" class="btn btn-light">
+                <i class="fa-regular fa-search"></i>
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light nav-search">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex align-items-center ms-auto">
+              <label for="searchInfoBar" class="search-label pe-3"
+                >What Service Is Available For You?</label
+              >
+              <input
+                class="form-control me-2 search-field"
+                type="search"
+                placeholder="enter zip code"
+                aria-label="enter zip code"
+                id="searchInfoBar"
+              />
+              <button class="btn btn-dark" type="submit" id="searchButtonInfoBar">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="checkout-form-container">
+				<div class="checkout-form-wrapper">
+          <form action="../old_stuff/logsales.php" class="d-flex" id="checkout-form">
+            <div class="checkout-billing-address">
+              <h2>Billing Address</h2>
+              <div class="mt-4">
+                <label for="exampleInputEmail1" class="form-label"><i class="fa-light fa-user"></i> Full Name</label>
+                <input type="text" class="form-control" id="fname" aria-describedby="fname" placeholder="John M Doe" name="firstname">
+              </div>
+              <div class="mt-4">
+                <label for="exampleInputEmail1" class="form-label"><i class="fa-light fa-envelope"></i> Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="sample@example.com" name="email">
+              </div>
+              <div class="mt-4">
+                <label for="exampleInputEmail1" class="form-label"><i class="fa-light fa-address-card"></i> Address</label>
+                <input type="text" class="form-control" id="adr" aria-describedby="Address" placeholder="542 W 15th Street" name="address">
+              </div>
+              <div class="mt-4">
+                <label for="exampleInputEmail1" class="form-label"><i class="fa-light fa-buildings"></i> City</label>
+                <input type="text" class="form-control" id="city" aria-describedby="city" placeholder="New York" name="city">
+              </div>
+              <div class="d-flex mt-4">
+                <div>
+                  <label for="exampleInputEmail1" class="form-label">State</label>
+                  <input type="text" class="form-control" id="state" aria-describedby="state" placeholder="NY" name="state">
+                </div>
+                <div class="ms-4">
+                  <label for="exampleInputEmail1" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="zip" aria-describedby="zip" placeholder="06820" name="zip">
+                </div>
+              </div>
+              <div class="mt-4 form-check">
+                <input type="checkbox" class="form-check-input" id="sameadr" checked name="sameadr">
+                <label class="form-check-label" for="exampleCheck1">Shipping address same as billing</label>
+              </div>
+            </div>
+            <div class="checkout-payment-details">
+              <h2>Payment</h2>
+              <div class="checkout-cards-icons">
+                <i class="fa-brands fa-cc-visa" style="color: #08007A;"></i>
+                <i class="fa-brands fa-cc-amex" style="color: #0902E6;"></i>
+                <i class="fa-brands fa-cc-mastercard" style="color: #F30602;"></i>
+                <i class="fa-brands fa-cc-discover" style="color: #FEA801;"></i>
+              </div>
+              <div class="mt-4">
+                <label for="exampleInputEmail1" class="form-label">Name on Card</label>
+                <input type="text" class="form-control" id="cname" aria-describedby="cname" placeholder="John M Doe" name="cardname">
+              </div>
+              <div class="mt-4">
+                <label for="exampleInputEmail1" class="form-label">Credit Card Number</label>
+                <input type="email" class="form-control" id="ccnum" aria-describedby="ccnum" placeholder="1111-1111-1111-1111" name="cardnumber">
+              </div>
+              <div class="mt-4">
+                <label for="exampleInputEmail1" class="form-label">Exp Month</label>
+                <input type="text" class="form-control" id="expmonth" aria-describedby="expmonth" placeholder="September" name="expmonth">
+              </div>
+              <div class="d-flex mt-4">
+                <div>
+                  <label for="exampleInputEmail1" class="form-label">Exp Year</label>
+                  <input type="text" class="form-control" id="expyear" aria-describedby="expyear" placeholder="2025" name="expyear">
+                </div>
+                <div class="ms-4">
+                  <label for="exampleInputEmail1" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cvv" aria-describedby="cvv" placeholder="352" name="cvv">
+                </div>
+              </div>
+            </div>
+          </form>
+				</div>
+        <div class="checkout-cart-details">
+          <div class="checkout-cart-details-header">
+            <h3>Cart</h3>
+            <div class="checkout-cart-details-badge">
+              <i class="fa-light fa-basket-shopping"></i>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="checkout-cart-details-row">
+            <div class="d-flex align-items-center justify-content-between mt-4">
+              <p class="fs-5" id="title_bundle">Total</p>
+              <p class="fw-bold fs-5" id="single_price">$ 00.0</p>
+            </div>
+          </div>
+          <div class="checkout-cart-details-row">
+            <div class="d-flex align-items-center justify-content-between mt-4">
+              <p class="fs-5">Total</p>
+              <p class="fw-bold fs-5" id="total_price">$ 00.0</p>
+            </div>
+          </div>
+          <button class="checkout-button btn btn btn-success" id="checkout-submit-button">Continue to Checkout</button>
+        </div>
+			</div>
+
+      <footer class="footer m-0">
+        <p class="mb-0">
+          © 2023 All Rights Reserved by Blue Mobile.
+        </p>
+      </footer>
+    </div>
+
     <script src="js/index_functions.js"></script>
     <script src="js/cookies_basket_functions.js"></script>
-
-    <button class="button style1" id="myButton" onclick="myFunction()">
-        Click Me!
-    </button>
-
-    <div class="navbar style1">
-        <a id='homeNavBarLink' href="index.html" title="Home Page"><i class="fa fa-home"></i></a>
-        <a id='bundlesNavBarLink' href="bundles.html" title="Most Popular Producs">Bundles</a>
-        <div class="dropdown">
-            <button class="dropbtn">Broadband
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div id='dropdownContentNavBar' class="dropdown-content">
-                <div class="header style1">
-                    <h4>Broadband Deals</h4>
-                </div>
-                <div class="row">
-                    <div id='broadbandButtonsNavBar' class="column">
-                        <a id='bbPhoneNavBarLink' href="bb_phone.html">Broadband and phone</a>
-                        <a id='bbOnlyNavBarLink' href="bb_only.html">Broadband only</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a id='helpNavBarLink' href='help_and_support.html'>Help & Support</a>
-        <div class="basket style1">
-            <button id='basketButtonNavBar' class="basketbtn">
-                <i class="fa fa-shopping-basket"></i> Your Basket <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="basket-content style1" id="basket_content">
-                <div class="header">
-                    <h5 id="basket_content_dynamic"></h5>
-                    <button onclick="deleteCookie('basket');location.replace('index.html');" id="remove_basket" style="display: none;">Remove Basket</button>
-                    <br>
-                    <button onclick="location.replace('eligibility.html');" id="proceed_eli" style="display: none;">Proceed Checkout</button>
-                </div>
-            </div>
-        </div>
-        <div class="search-container style1">
-            <input id='searchNavBar' type="text" placeholder="Search.." name="search">
-            <button class='style1' id='submitSearchNavBar' type="submit"><i class="fa fa-search"></i></button>
-        </div>
-    </div>
-
     <!-- Update Nav Bar For Basket Element If Any -->
     <script>
-        updateBasket();
+      updateBasket();
     </script>
-
-    <div class="infobar style1">
-        <ul href="" style="color:white">
-            <i class="fa fa-home" style="color:white"></i> What Service Is Available For You?
-            <input id='searchInfoBar' type="text" placeholder="Enter postcode" name="search">
-            <button id='searchButtonInfoBar' type="submit" class="style1"><i class="fa fa-search"></i></button>
-            <a href="" id='chatButtonInfoBar' style="color:white"><i class="fa fa-comments" style="color:white"></i> Chat</a>
-            <a href="" id='callButtonInfoBar' style="color:white"><i class="fa fa-phone" style="color:white"></i> Call Us</a>
-        </ul>
-    </div>
-
-
-    <!-- Update Nav Bar For Basket Element If Any -->
-    <script>
-        updateBasket();
-    </script>
-    <br>
-    <div class="checkout">
-      <div class="col-75">
-        <div class="container">
-          <form action="../old_stuff/logsales.php">
-          
-            <div class="checkout">
-              <div class="col-50">
-                <h3>Billing Address</h3>
-                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                <input type="text" id="email" name="email" placeholder="john@example.com">
-                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                <label for="city"><i class="fa fa-institution"></i> City</label>
-                <input type="text" id="city" name="city" placeholder="New York">
-
-                <div class="checkout">
-                  <div class="col-50">
-                    <label for="state">State</label>
-                    <input type="text" id="state" name="state" placeholder="NY">
-                  </div>
-                  <div class="col-50">
-                    <label for="zip">Zip</label>
-                    <input type="text" id="zip" name="zip" placeholder="10001">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-50">
-                <h3>Payment</h3>
-                <label for="fname">Accepted Cards</label>
-                <div class="icon-container">
-                  <i class="fa fa-cc-visa" style="color:navy;"></i>
-                  <i class="fa fa-cc-amex" style="color:blue;"></i>
-                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                  <i class="fa fa-cc-discover" style="color:orange;"></i>
-                </div>
-                <label for="cname">Name on Card</label>
-                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                <label for="ccnum">Credit card number</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                <label for="expmonth">Exp Month</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="September">
-                <div class="checkout">
-                  <div class="col-50">
-                    <label for="expyear">Exp Year</label>
-                    <input type="text" id="expyear" name="expyear" placeholder="2018">
-                  </div>
-                  <div class="col-50">
-                    <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="352">
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-            <label>
-              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-            </label>
-            <input type="submit" value="Continue to checkout" class="btn">
-          </form>
-        </div>
-      </div>
-      <div class="col-25">
-        <div class="container">
-          <h4>Cart <span class="price" style="color:black" id="number_product"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
-          <p><a href="#" id="title_bundle"></a> <span class="price" id="single_price"></span></p>
-          <hr>
-          <p>Total <span class="price" style="color:black" id="total_price"><b></b></span></p>
-        </div>
-      </div>
-    </div>
-
     <!-- Update The Cart Element To Reflect Current Basket -->
     <script type="text/javascript">
-    updateCartPrice();
+      updateCartPrice();
+    </script>
+    <script>
+      $('#checkout-submit-button').click(function () {
+        $('#checkout-form').submit()
+      });
+    </script>
+            <!-- start -->
+    <div id="liveagent_button_online_box" style="display: none">
+        <a id="liveagent_button_online_5737E000000CarN" href="javascript://Chat"
+            onclick="liveagent.startChat('5737E000000CarN')" class="embeddedServiceHelpButton helpButton uiButton"
+            style="display: none;">Chat with an Expert</a>
+        <div id="liveagent_button_offline_5737E000000CarN" style="display: none;">Agent Offline</div>
+    </div>
+
+
+
+    <script type="text/javascript">
+  if (!window._laq) { window._laq = []; }
+  window._laq.push(function(){liveagent.showWhenOnline('5737E000000CarN', document.getElementById('liveagent_button_online_5737E000000CarN'));
+  liveagent.showWhenOffline('5737E000000CarN', document.getElementById('liveagent_button_offline_5737E000000CarN'));
+  });
+    </script>
+    <script>
+        addEventListener("keypress", (event) => {
+            if(event.key == 'h'){
+                document.getElementById('liveagent_button_online_box').style.display = '';
+                liveagent.startChat('5737E000000CarN')
+            }
+        });
     </script>
 
-</body>
+
+    <script type='text/javascript'>
+        liveagent.init('https://d.la1-c1cs-lo2.salesforceliveagent.com/chat', '5727E000000Cat7', '00D7E000000BE0W');
+    </script>
+
+    <!-- end -->
+  </body>
 </html>
