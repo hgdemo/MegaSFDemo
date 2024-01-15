@@ -249,15 +249,21 @@
     </script>
      <!-- start -->
 
-    <div id="liveagent_button_online_box">
+    <div id="liveagent_button_online_box" style="display: none">
         <a id="liveagent_button_online_5737E000000025l" href="javascript://Chat"
             onclick="liveagent.startChat('5737E000000025l')" class="embeddedServiceHelpButton helpButton uiButton"
             style="display: none;">Chat with an Expert</a>
         <div id="liveagent_button_offline_5737E000000025l" style="display: none;">Agent Offline</div>
     </div>
 
-
-
+    <script>
+        addEventListener("keypress", (event) => {
+            if(event.key == 'h'){
+                document.getElementById('liveagent_button_online_box').style.display = '';
+                liveagent.startChat('5737E000000025l')
+            }
+        });
+    </script>
     <script type="text/javascript">
 	if (!window._laq) { window._laq = []; }
 	window._laq.push(function(){liveagent.showWhenOnline('5737E000000025l', document.getElementById('liveagent_button_online_5737E000000025l'));
